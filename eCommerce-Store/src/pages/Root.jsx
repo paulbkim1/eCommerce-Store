@@ -9,7 +9,7 @@ export default function RootLayout() {
       <main className="mx-auto min-h-[80vh] max-w-[500px] sm:max-w-[900px] px-[10px] sm:px-[20px] my-[10vh]">
         <Outlet />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
