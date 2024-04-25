@@ -42,7 +42,7 @@ export default function ProductPage() {
 
   return (
     <>
-      <h1 className="text-center font-semibold text-[clamp(1.5rem,6vw,2rem)]  mb-10">
+      <h1 className="text-center font-semibold text-[clamp(1.5rem,6vw,2rem)] mb-10">
         {title}
       </h1>
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-24 mb-4">

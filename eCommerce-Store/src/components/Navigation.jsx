@@ -1,17 +1,11 @@
 import { NavLink } from "react-router-dom";
-import CartModal from "./CartModal";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { MdMenu, MdShoppingCart } from "react-icons/md";
 import NavigationDrawer from "./NavigationDrawer";
 import CartDrawer from "./CartDrawer";
 
 export default function LandingNavigation() {
-  const modal = useRef();
   const [activeDrawer, setActiveDrawer] = useState(null);
-
-  function handleOpenCart() {
-    modal.current.open();
-  }
 
   const toggleDrawer = (drawerType) => {
     if (activeDrawer === drawerType) {
@@ -23,7 +17,6 @@ export default function LandingNavigation() {
 
   return (
     <>
-      <CartModal ref={modal} />
       <header className="flex items-center justify-center h-[8vh] border-b border-gray-400 fixed top-0 left-0 right-0 bg-white w-auto z-10">
         <nav className="max-w-[500px] sm:max-w-[900px] px-[10px] sm:px-[20px] flex justify-between items-center w-full">
           <NavLink
